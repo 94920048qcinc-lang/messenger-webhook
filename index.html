@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Messenger Bot - Connexion Facebook</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 40px; max-width: 700px; margin: auto; }
+    button { padding: 12px 20px; font-size: 16px; cursor: pointer; }
+    .box { margin-top: 20px; padding: 16px; border: 1px solid #ccc; border-radius: 8px; }
+    ul { padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Connexion Facebook</h1>
+  <p>Cette page permet de connecter Facebook et d’afficher la liste des Pages gérées.</p>
+
+  <button id="fb-login-btn">Connecter Facebook</button>
+
+  <div class="box">
+    <h3>Statut</h3>
+    <p id="status">Non connecté</p>
+  </div>
+
+  <div class="box">
+    <h3>Pages Facebook</h3>
+    <ul id="pages-list"></ul>
+  </div>
+
+  <script>
+    document.getElementById("fb-login-btn").addEventListener("click", function () {
+      document.getElementById("status").innerText =
+        "Bouton cliqué. La connexion Facebook sera branchée à l’étape suivante.";
+    });
+  </script>
+</body>
+</html>
